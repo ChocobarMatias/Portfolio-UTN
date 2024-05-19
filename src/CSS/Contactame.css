@@ -1,0 +1,14 @@
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(50px);
+    background-color: #c3f02f30;
+    border: 3px solid rgba(255, 255, 255, 0.23);
+    border-radius:30px;
+    padding: 32px;
+    box-shadow: 0 0 20px rgb(220, 100, 30);
+}
+.contacto:hover{
+    transform: scale(1.08);
+}
