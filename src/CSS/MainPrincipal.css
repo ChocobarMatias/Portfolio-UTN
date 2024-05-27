@@ -42,27 +42,27 @@ img:hover{
 }
 .formaciionMain{
     width: 50%;
-    height: 25%;
+    height: 32%;
 }
 
-.idioma{
+.idiomamain{
     width: 160%;
-    height: 25%;
+    height: 32%;
 }
-.certificado{
+.certificadomain{
     width: 160%;
-    height: 25%;
+    height: 32%;
 }
 
-.experiencia{
+.experienciamain{
     width: 170%;
     height: 55%;
 }
-.skill{
+.skillmain{
     width: 170%;
     height: 55%;
 }
-.proyecto{
+.proyectomain{
     width: 170%;
     height: 55%;
 }

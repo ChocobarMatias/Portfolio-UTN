@@ -12,6 +12,7 @@ import proyecto1 from "../assets/proyecto1.jpg"
 import proyecto2 from "../assets/proyecto2.jpg"
 import proyecto3 from "../assets/proyecto3.jpg"
 import "../CSS/Proyectos.css"
+import Footer from "../components/Footer"
 
 const Proyectos = () => {
 
@@ -62,6 +63,7 @@ const Proyectos = () => {
         </div>
         </form>
       )}</div>
+      <Footer/>
     </div>
   )
 }

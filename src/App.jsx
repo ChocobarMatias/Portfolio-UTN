@@ -31,7 +31,8 @@ function App() {
     <div className="fondo">
     <BrowserRouter>
     <Routes>
-      <Route path ="/" element={<Login/>}/>
+      {/* <Route path ="/" element={<Login/>}/> */}
+      <Route path ="/" element={<Home/>}/>
       <Route path ="/home" element={<Home/>}/>
       <Route path ="/home/formacion" element={<Formacion/>}/>
       <Route path ="/home/experiencias" element={<Experiencia/>}/>
