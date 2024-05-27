@@ -51,7 +51,7 @@ useEffect(()=>{getCertificacion()},[])
     <div>
       <br /><br />
       <NavOpciones/><br /><br /><br />
-      <h3>CERTIFICADOS<Link to={"/home/create/certificado"}><IoMdAddCircleOutline/></Link></h3>
+      <h3 className="text-white">CERTIFICADOS : <Link to={"/home/create/certificado"}><IoMdAddCircleOutline/></Link></h3>
       <br /><br />
       <hr />
       
@@ -67,20 +67,20 @@ useEffect(()=>{getCertificacion()},[])
         <br /><br />
         <div className="Descripcion text-center">
         <br /><br /><br />
-        <h3>Titulo del Certificado : {certificado.titulo}</h3>
-        <h4>Academia :{certificado.institucionEducativa}</h4>
-        <h4>Año :{certificado.añoInicio}</h4>
-        <h4>Horas Catedra : {certificado.horasAcademica}</h4>
+        <h3 className="text-white">Titulo del Certificado : {certificado.titulo}</h3>
+        <h4 className="text-white">Academia :{certificado.institucionEducativa}</h4>
+        <h4 className="text-white">Año :{certificado.añoInicio}</h4>
+        <h4 className="text-white">Horas Catedra : {certificado.horasAcademica}</h4>
         <br /><br />
         </div>
    
     <br />
     <div className="contenedor2">
           <div className="boton1">
-          <Link to={`/home/update/certificado/${certificado.id}`} className="btn btn-warning"><FaEdit /></Link> 
+          <Link to={`/home/update/certificado/${certificado.id}`} className="btn btn-warning"><FaEdit className="iconcertificado"/></Link> 
           </div>
           <div className="boton2">
-          <Button onClick={(()=>handleClick(certificado.id))} className="btn btn-danger"><MdDelete /></Button>
+          <Button onClick={(()=>handleClick(certificado.id))} className="btn btn-danger"><MdDelete className="iconcertificado"/></Button>
           </div> 
           </div>
         </form>

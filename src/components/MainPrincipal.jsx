@@ -11,83 +11,52 @@ import "../CSS/MainPrincipal.css";
 
 const MainPrincipal = () => {
   return (
-    <div className="fondo">
+    <div>
+    <div className="contenedormain">
       <Row >
-        <Col md={2}>
-          <br />
-          <br />
-          <br />
-          <br />
-          <div className="formacion"><Link to="/home/formacion"><h2>Formacion</h2><img className="imagenFormacion" src={formacion} alt="" width={"10%"} /></Link></div>
+        <Col md={3}><div className="formaciionMain"> <br />
+            <br /><br /><br />
+            <br /><h2 className="form text-white">Formacion</h2><Link to="/home/formacion"><img className="imagenFormacion"  height="50" src={formacion} alt="" width={"40%"} /></Link></div>
+        </Col>
         
-        </Col>
-        <Col md={2}></Col>
-        <Col md={2}>
-          <div className="idioma">
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <h4>Idioma</h4><Link to="/home/idiomas"><img className="imagenIdioma" src={idioma} alt="" width={"30%"} /></Link>
+        <Col md={1}>
+        <br /><br /><br /><br /><br />
+          <div className="idioma text-white"><h2>Idioma</h2><Link to="/home/idiomas"><img className="imagenIdioma" src={idioma} alt="" width={"30%"} /></Link>
           </div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+          <br /><br /><br /> <br /><br /><br />
         </Col>
         <Col md={2}></Col>
-        <Col md={2}>
-          <br />
-          <br />
-          <br />
+        <Col md={1}>
           <div className="certificado">
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <h4>Certificados</h4><Link to="/home/certificados"><img className="imagenCertificado" src={certificado} alt="" width={"80%"} /></Link>
+            <br /><br />
+            <h2 className="experiencia text-white">Certificados</h2><Link to="/home/certificados"><img className="imagenCertificado" src={certificado} alt="" width={"80%"} /></Link>
           </div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+          <br /><br /><br /><br /><br />
         </Col>
-        <Col md={2}></Col>
+       
+      <br /><br /><br />
       </Row>
-      <br />
-      <br />
-      <br />
-      <br />
       <Row>
-   
-        <Col md={2}>
+        <Col md={1}>
           {" "}
-          <div className="experiencia"><h3>Experiencia</h3><Link to="/home/experiencias"><img className="imagenExperiencia" src={experiencia} alt="" width={"40%"} /></Link>
+          <div className="experiencia text-white"><h2>Experiencia</h2><Link to="/home/experiencias"><img className="imagenExperiencia" src={experiencia} alt="" width={"40%"} /></Link>
           </div>
         </Col>
         <Col md={2}></Col>
-        <Col md={2}>
+        <Col md={1}>
           {" "}
-          <div className="skill"><h4>Soft Skill</h4><Link to="/home/skills"><img className="imagenSkill" src={skill} alt="" width={"40%"} /></Link>
+          <div className="skill text-white"><h2>Soft Skill</h2><Link to="/home/skills"><img className="imagenSkill" src={skill} alt="" width={"40%"} /></Link>
           </div>
         </Col>
         <Col md={2}></Col>
-        <Col md={2}>
-          <div className="proyecto"><h4>Proyectos</h4><Link to="/home/proyectos"><img className="imagenFormacion" src={proyecto} alt="" width={"40%"} /></Link>
+        <Col md={1}>
+          <div className="proyecto text-white"><h2>Proyectos</h2><Link to="/home/proyectos"><img className="imagenFormacion" src={proyecto} alt="" width={"40%"} /></Link>
           </div>
         </Col>
-        <Col md={2}></Col>
+        {/* <Col md={2}></Col> */}
       </Row>
-      <br />
-      <br />
-      <br />
+      </div>
+      <br /><br /><br /><hr />
       <hr />
       <Contactame />
       <hr />

@@ -1,5 +1,5 @@
 import {useState,useEffect} from "react"
-import {useNavigate,useParams} from "react-router-dom"
+import {useNavigate,useParams,Link} from "react-router-dom"
 import axios from "axios"
 
 const UpdateProyecto = () => {
@@ -33,7 +33,7 @@ const UpdateProyecto = () => {
       })
       if(response){
         alert("Proyecto Actualizado")
-        navigate("/home")
+        navigate("/home/proyectos")
       }
      }catch (error){
        console.log(error)
@@ -45,27 +45,26 @@ const UpdateProyecto = () => {
   useEffect(()=>{getProyecto()},[]);
     return (
       <div>
-        <h3>Actualizar PROYECTOS</h3>
+        <br />
+        <br />
+        <h3 className="form text-white">Actualizar Proyectos</h3>
       <hr />
      <br />
+     <div className="actualizarproyecto">
         <form action="" onSubmit={handleSubmit}>
-         
-          {/* <h4>Nombre del Proyecto: {proyecto.nombreProyecto}</h4> */}
-           <label htmlFor=""></label>
+           <label htmlFor=""><h4 className="form text-white">Nombre del Proyecto : </h4></label>
            <input type="text" onChange={handleChange} name ="nombreProyecto" value={datos.nombreProyecto} />
-
-          {/* <h4>proyecto.detalle</h4>
-
-          <h4>proyecto.imagenProyecto</h4>
-
-          <h4>proyecto.videoProyecto</h4>
-
-          <h4>proyecto.urlGitHubProyecto</h4>
-
-          <h4>proyecto.urlProyecto</h4> */}
-        
+           <br /><br />
+           <label htmlFor=""><h4 className="form text-white">Desccripcion : </h4></label>
+           <input type="text" onChange={handleChange} name ="descripcion" value={datos.descripcion} />
+           <br /><br />
+           <label htmlFor=""><h4 className="form text-white">Repositorio : </h4></label>
+           <input type="text" onChange={handleChange} name ="repositorio" value={datos.repositorio} />
+           <br /><br />
         <button type="submit" className="btn btn-danger">Guardar</button>
+        <Link to={"/home/proyectos"} className="btn btn-warning">VOLVER</Link>
         </form>
+        </div>
       </div>
     )
   }

@@ -36,7 +36,7 @@ useEffect(()=>{getExperiencia()},[]);
     <div>
       <br /><br />
       <NavOpciones/><br />
-      <h3>Experiencia Laboral<Link to={"/home/create/experiencia"}><IoMdAddCircleOutline/></Link></h3>
+      <h3 className="text-white">Experiencia Laboral : <Link to={"/home/create/experiencia"}><IoMdAddCircleOutline className="iconcrearexperiencia"/></Link></h3>
       <hr/>
       <div className="contenedorexperiencia">
       
@@ -45,14 +45,14 @@ useEffect(()=>{getExperiencia()},[]);
       
           <Card.Body >
             <Card.Img variant="top" src="" style={{ width: "50px", height: "50px" }} />
-            <Card.Title>{experiencia.id} - {experiencia.cargo}</Card.Title>
-            <Card.Subtitle className="mb-2 text-center">{experiencia.empresa}</Card.Subtitle>
-            <Card.Text>
+            <Card.Title className="text-white">{experiencia.id} - {experiencia.cargo}</Card.Title>
+            <Card.Subtitle className="mb-2 text-center text-white">{experiencia.empresa}</Card.Subtitle>
+            <Card.Text className="text-white">
               {experiencia.añoInicio} – {experiencia.añoFinal} - ({experiencia.estadoActual})
             </Card.Text>
          
-            <Link to={`/home/update/experiencia/${experiencia.id}`} className="btn btn-warning"><FaEdit /></Link> 
-            <Button onClick={(()=>handleClick(experiencia.id))} className="btn btn-danger"><MdDelete /></Button>
+            <Link to={`/home/update/experiencia/${experiencia.id}`} className="btn btn-warning"><FaEdit className="iconcrearexperiencia" /></Link> 
+            <Button onClick={(()=>handleClick(experiencia.id))} className="btn btn-danger"><MdDelete className="iconcrearexperiencia"/></Button>
           </Card.Body>
           
         </Card>)}

@@ -29,7 +29,7 @@ const handleSubmit = async(e) =>{
    })
    if(response){
     alert("Proyecto Nuevo Guardado correctamente")
-    navigate("/home")
+    navigate("/home/proyectos")
    }
   }catch (error){
     console.log(error)
@@ -46,7 +46,7 @@ const handleSubmit = async(e) =>{
         <input type="text" onChange={handleChange} name="nombreProyecto"/>
         <br /><br />
         <button type="submit" className="btn btn-success">GUARDAR</button>
-        <Link to={"/home"} className="btn btn-warning">VOLVER</Link>
+        <Link to={"/home/proyectos"} className="btn btn-warning">VOLVER</Link>
         </form>
       </div>
     )

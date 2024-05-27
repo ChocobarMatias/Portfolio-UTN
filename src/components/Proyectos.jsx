@@ -7,6 +7,11 @@ import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import NavOpciones from "./NavOpciones";
 import {Card} from 'react-bootstrap';
+import { FaGithubSquare } from "react-icons/fa";
+import proyecto1 from "../assets/proyecto1.jpg"
+import proyecto2 from "../assets/proyecto2.jpg"
+import proyecto3 from "../assets/proyecto3.jpg"
+import "../CSS/Proyectos.css"
 
 const Proyectos = () => {
 
@@ -34,39 +39,29 @@ const Proyectos = () => {
     <div>
       <br /><br />
       <NavOpciones/><br />
-      <h3>PROYECTOS<Link to="/home/create/proyectos"><IoMdAddCircleOutline/></Link></h3>
+      <h3 className="text-white">PROYECTOS : <Link to="/home/create/proyectos"><IoMdAddCircleOutline className="iconcrearproyecto"/></Link></h3>
       <hr />
+      <div className="contenedorProyecto">
       {proyectos.map(proyecto=>
         <form action="" key={proyecto.id}>
-         
-          <h4>Nombre del Proyecto: {proyecto.nombreProyecto}</h4>
-
-          <h4>proyecto.detalle</h4>
-
-          <h4>proyecto.imagenProyecto</h4>
-
-          <h4>proyecto.videoProyecto</h4>
-
-          <h4>proyecto.urlGitHubProyecto</h4>
-
-          <h4>proyecto.urlProyecto</h4>
-
-
-          <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+          <Card className="cardproyecto" style={{ width: '70rem' }}>
+      <Card.Img variant="top" src={proyecto.id ==1 ? proyecto1:proyecto.id ==2 ? proyecto2 :proyecto.id ==3 ? proyecto3:proyecto3} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title><h2 className="text-white"><b>Proyecto : </b>{proyecto.nombreProyecto}</h2></Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+         <h3 className="text-white"><b>Descripcion :</b> {proyecto.descripcion}</h3>
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Card.Text className="text-white">
+        <h2 ><FaGithubSquare  className="icon" /><Link to={proyecto.repositorio}>{proyecto.repositorio}</Link></h2>
+        </Card.Text>
       </Card.Body>
     </Card>
-        <Link to={`/home/update/proyectos/${proyecto.id}`} className="btn btn-warning"><FaEdit /></Link>
-        <Button onClick={(()=>handleClick(proyecto.id))} className="btn btn-danger"><MdDelete /></Button>
+    <div className="botonesProyecto">
+    <Link to={`/home/update/proyectos/${proyecto.id}`} className="btn btn-warning"><FaEdit className="icon2"/></Link>
+        <Button onClick={(()=>handleClick(proyecto.id))} className="btn btn-danger"><MdDelete className="icon2"/></Button>
+        </div>
         </form>
-      )}
+      )}</div>
     </div>
   )
 }

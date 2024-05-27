@@ -17,18 +17,7 @@ border: 3px solid rgba(206, 28, 28, 0.23);
     border-radius:30px;
     padding: 3px;
     box-shadow: 0 0 20px rgb(220, 100, 30);
-    /* background-image: url("../Img/fondo1.avif"); */
-    /* Primer resplandor */
-text-shadow: 0px 0px 10px #FFF,
-/* Parte de luz */
-4px 2px 12px #DCB500,
--4px 2px 12px #DCB500,
-/* Subida del fuego */
-0px -6px 14px #FF7A00,
-0px -12px 14px #FF6300,
-0px -20px 14px #FF4400,
-/* Azuleo de la llama */
-0px -30px 14px #0A7BFF,
+    background-image: url("../assets/fondo7.gif");
     
 }
 .perfil:hover{

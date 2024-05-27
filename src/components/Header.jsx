@@ -12,13 +12,13 @@ const Header = memo(function Header() {
       
       <div className="perfil">
 <img src={FOTO} alt="/home/formacion"  className="fotoperfil" width={"100%"} />
-<h1  className="text-success">Chocobar Matias Sebastian</h1>
+<h1  className="text-white">Chocobar Matias Sebastian</h1>
 <br />
-<h3  className="text-success">Programador Universitario</h3>
+<h3  className="text-white">Programador Universitario - UTN</h3>
 <br /><br />
-<h3  className="text-warning">Acerca de mi</h3>
+<h3  className="text-white">Acerca de mi</h3>
 <hr /><br />
-<h2 className="text-danger">Soy un apasionado del mundo de la programación, la tecnología y los ecosistemas emprendedores y los nuevos desafios.</h2>
+<h2 className="text-white">Soy un apasionado del mundo de la programación, la tecnología, los ecosistemas emprendedores y los nuevos desafios.</h2>
 <br /><br />
     </div></div>
     <div className="glass"></div>
