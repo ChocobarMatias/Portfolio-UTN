@@ -7,9 +7,7 @@ const navigate = useNavigate();
 
 const initialState = {
       nombreSkill: "",
-      porcentaje: "",
-      color: "",
-      icono: ""
+      porcentaje: ""
 }
 
 const [datos, setDatos] = useState(initialState)
@@ -22,13 +20,11 @@ const handleSubmit = async(e)=>{
   try{
     let response = await axios.post("http://localhost:3001/Skill",{
       nombreSkill: datos.nombreSkill,
-      porcentaje: datos.porcentaje,
-      color: datos.color,
-      icono: datos.icono
+      porcentaje: datos.porcentaje
     })
     if(response){
         alert("Skill Creado correctamente")
-        navigate("/home")
+        navigate("/home/skills")
     }
 
   }catch (error){
@@ -41,6 +37,7 @@ const handleSubmit = async(e)=>{
       <br/>
       <h3>Agregar Nuevo Skill</h3>
       <br/>
+      <div className="crearskill">
       <form action="" onSubmit={handleSubmit}>
         <label htmlFor="">Nombre del Skill : </label>
         <input type="text" onChange={handleChange} name="nombreSkill"/>
@@ -48,15 +45,12 @@ const handleSubmit = async(e)=>{
         <label htmlFor="">Porcentaje : </label>
         <input type="number" onChange={handleChange} name="porcentaje"/>
         <br /><br />
-        <label htmlFor="">Color : </label>
-        <input type="color" onChange={handleChange} name="color"/>
-        <br /><br />
-        <label htmlFor="">Icono : </label>
-        <input type="text" onChange={handleChange} name="icono"/>
-        <br /><br />
+        <div className="botones">
         <button type="submit" className="btn btn-success">GUARDAR</button>
-        <Link to={"/home"} className="btn btn-warning">VOLVER</Link>
+        <Link to={"/home/skills"} className="btn btn-warning">VOLVER</Link>
+        </div>
       </form>
+      </div>
     </div>
   )
 }

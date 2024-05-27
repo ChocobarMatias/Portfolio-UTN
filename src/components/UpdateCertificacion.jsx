@@ -1,6 +1,7 @@
 import axios from "axios"
 import {useState, useEffect} from "react"
-import {useNavigate, useParams} from "react-router-dom"
+import {useNavigate, useParams,Link} from "react-router-dom"
+import "../CSS/Certificado.css"
 
 const UpdateCertificacion = () => {
 const navigate = useNavigate();
@@ -33,7 +34,7 @@ const handleSubmit = async(e) =>{
     });
     if(response){
     alert("Certificado Actualizado");
-    navigate("/home")
+    navigate("/home/certificados")
     }
   } catch (error) {
     console.log(error)
@@ -49,7 +50,10 @@ useEffect(()=>{getDatos()},[])
         <br/>
         <br/>
         <h3>Actualizar Certificacion</h3>
-        
+        <br/>
+        <hr />
+        <br />
+        <div className="actualizarcertificado">
         <form action="" onSubmit={handleSubmit}>
         <label htmlFor="">Titulo : </label>
         <input type="text" onChange={handleChange} name="titulo" value={datos.titulo}/>
@@ -72,8 +76,12 @@ useEffect(()=>{getDatos()},[])
         <label htmlFor="">Certificado : </label>
         <input type="text" onChange={handleChange} name="fotoCertificado" value={datos.fotoCertificado}/>
         <br/><br/>
+        <div className="botones">
         <button type="submit" className="btn btn-success">GUARDAR</button>
+        <Link to={"/home/certificados"} className="btn btn-warning">VOLVER</Link>
+        </div>
         </form>
+        </div>
       </div>
     )
   }

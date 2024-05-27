@@ -6,6 +6,7 @@ import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { IoMdAddCircleOutline } from "react-icons/io";
 import NavOpciones from "./NavOpciones";
+import "../CSS/Experiencia.css"
 
 const Experiencia = () => {
 
@@ -35,9 +36,13 @@ useEffect(()=>{getExperiencia()},[]);
     <div>
       <br /><br />
       <NavOpciones/><br />
-      <h3>Experiencia<Link to={"/home/create/experiencia"}><IoMdAddCircleOutline/></Link></h3>
+      <h3>Experiencia Laboral<Link to={"/home/create/experiencia"}><IoMdAddCircleOutline/></Link></h3>
       <hr/>
-      {experiencias.map(experiencia =><Card key={experiencia.id} style={{ width: '30rem' }} >
+      <div className="contenedorexperiencia">
+      
+      <div><br /><br /></div>
+      {experiencias.map(experiencia =><Card className="CardE" key={experiencia.id} style={{ width: '30rem' }} >
+      
           <Card.Body >
             <Card.Img variant="top" src="" style={{ width: "50px", height: "50px" }} />
             <Card.Title>{experiencia.id} - {experiencia.cargo}</Card.Title>
@@ -51,7 +56,7 @@ useEffect(()=>{getExperiencia()},[]);
           </Card.Body>
           
         </Card>)}
-
+        </div>
 
       </div>
   )

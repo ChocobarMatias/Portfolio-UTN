@@ -53,7 +53,8 @@ useEffect(()=>{getFormaciones()},[]);
      
       <div className="contenedorFormacion">
         <div className="Card">
-      {formaciones.map(formacion => <Card className="CardF"key={formacion.id} style={{ width: '40rem'  }} >
+          <div><br /><br /></div>
+      {formaciones.map(formacion => <Card className="CardF" key={formacion.id} style={{ width: '40rem'  }} >
           <Card.Body >
             <Row>
               <Col md={1}>

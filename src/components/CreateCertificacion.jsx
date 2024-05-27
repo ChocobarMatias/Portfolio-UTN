@@ -35,7 +35,7 @@ const handleSubmit = async(e) =>{
     })
     if(response){
     alert("Nuevo Certificado Agregado")
-     navigate("/home");
+     navigate("/home/certificados");
     }
     
   } catch (error) {
@@ -48,7 +48,10 @@ const handleSubmit = async(e) =>{
         <br/>
         <br/>
         <h3>Agregar Nuevo Certificado</h3>
-        
+        <br/>
+        <hr />
+        <br />
+        <div className="crearcertificado">
         <form action="" onSubmit={handleSubmit}>
         <label htmlFor="">Titulo : </label>
         <input type="text" onChange={handleChange} name="titulo"/>
@@ -71,10 +74,12 @@ const handleSubmit = async(e) =>{
         <label htmlFor="">Certificado : </label>
         <input type="text" onChange={handleChange} name="fotoCertificado"/>
         <br/><br/>
+        <div className="botones">
         <button type="submit" className="btn btn-success">GUARDAR</button>
-        <Link to={"/home"} className="btn btn-warning">VOLVER</Link>
+        <Link to={"/home/certificados"} className="btn btn-warning">VOLVER</Link>
+        </div>
         </form>
-        
+        </div>
         </div>
     )
   }

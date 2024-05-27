@@ -1,7 +1,9 @@
 import {useState} from "react"
 import axios from "axios";
 import {useNavigate, Link} from "react-router-dom"
- 
+import "../CSS/CreateFormacion.css" 
+import {Row, Col} from "react-bootstrap"
+
 const CreateFormacion = () => {
 
   const navigate = useNavigate()
@@ -33,7 +35,7 @@ let response = await axios.post("http://localhost:3001/Formacion",{
 })
 if(response){
   alert("Formacion Academica Agregada Correctamente");
-  navigate("/home")
+  navigate("/home/formacion")
 }
 }catch (error){
   console.log(error)
@@ -45,8 +47,14 @@ if(response){
       <br/>
       <h3>Agregar Formacion Academica</h3>
       <br/>
-      <form action="" onSubmit={handleSubmit}>
-        <label htmlFor="">Titulo : </label>
+      <hr/>
+      <br/>
+      <Row>
+      <form  action="" onSubmit={handleSubmit}>
+        <Col md={1}></Col>
+        <Col md={10}>
+       <div className="crearFormacion"> 
+        <label htmlFor=""><h3>Titulo :</h3> </label>
         <input type="text" onChange={handleChange} name="titulo"/>
         <br/><br/>
         <label htmlFor="">Entidad Academica : </label>
@@ -63,12 +71,21 @@ if(response){
         <br/><br/>
         <label htmlFor="">Logo : </label>
         <input type="text" onChange={handleChange} name="logo"/>
-        <br/><br/>
-        <br/>
+        <br/> </div> <br />
+        </Col>
+        <Col md={1}></Col>
+        <Row>
+          <Col md={3}></Col>
+        <Col md={3}>
+        <div>
         <button type="submit" className="btn btn-success">Guardar</button>
-        <Link to={"/home"} className="btn btn-warning">Volver</Link>
-
-        </form>
+        <br /><br /></div></Col>
+       
+        <Col md={1}>
+        <div>
+        <Link to={"/home/formacion"} className="btn btn-warning">Volver</Link>
+        </div></Col></Row>
+        </form></Row>
     </div>
   )
 }

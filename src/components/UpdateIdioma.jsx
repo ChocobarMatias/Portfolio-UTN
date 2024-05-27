@@ -1,6 +1,8 @@
 import axios from "axios"
 import {useState,useEffect} from "react"
 import { useParams,useNavigate } from "react-router-dom"
+import {Row, Col} from "react-bootstrap"
+import "../CSS/Idioma.css"
 
 const UpdateIdioma = () => {
 const navigate = useNavigate();
@@ -25,7 +27,7 @@ try {
   })
   if (response) {
     alert("Idioma Actualizado")
-    navigate("/home")
+    navigate("/home/idiomas")
   }
 } catch (error) {
   console.log(error)
@@ -40,7 +42,16 @@ setDatos({...datos,[e.target.name]:e.target.value})
 useEffect(()=>{getDatos()},[]);
     return (
       <div>
+        <br /><br />
+        <h3>Acualizar Idioma</h3>
+        <br/>
+        <hr />
+        <br />
+         <Row>
 <form action="" onSubmit={handleSubmit}>
+<Col md={1}></Col>
+        <Col md={10}>
+        <div className="actualizarIdioma"> 
   <br /><br />
   <h3>Actualizar Idioma</h3>
   <br /><br />
@@ -49,9 +60,15 @@ useEffect(()=>{getDatos()},[]);
   <br /><br />
   <label htmlFor="">Nivel</label>
   <input type="text" onChange={handleChange} name="nivel" value={datos.nivel}/>
-  <br /><br />
+  <br /></div><br />
+  </Col>
+        <Col md={1}></Col>
+        <Row>
+          <Col md={3}></Col>
+        <Col md={3}>
   <button type="submit" className="btn btn-success">GUARDAR</button>
-</form>
+  </Col></Row>
+</form></Row>
       </div>
     )
   }

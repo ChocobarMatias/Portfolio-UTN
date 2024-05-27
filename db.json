@@ -10,11 +10,11 @@
       "id": 1
     },
     {
-      "titulo": "matias matias",
-      "institucionEducativa": "",
+      "titulo": "Ingenieria Industrial",
+      "institucionEducativa": "Universidad Nacional de Tucuman UNT",
       "añoInicio": "",
-      "añoFinEstimado": "",
-      "estado": "",
+      "añoFinEstimado": "2012",
+      "estado": "Incompleto",
       "logo": "",
       "id": 2
     }
@@ -32,40 +32,168 @@
   ],
   "Idioma": [
     {
-      "idiomaNuevo": "afsas",
+      "idiomaNuevo": "INGLES",
       "nivel": "B2",
       "id": 1
     }
   ],
   "Certificacion": [
     {
-      "titulo": "dssdf",
-      "institucionEducativa": "",
-      "añoInicio": "",
-      "horasAcademica": "",
-      "codigo": "",
-      "url": "s",
-      "fotoCertificado": "",
+      "titulo": "Introduccion a Git y GitHub",
+      "institucionEducativa": "Todo Code Academy",
+      "añoInicio": "2024",
+      "horasAcademica": "2 Hs",
+      "codigo": "First slide",
+      "url": "",
+      "fotoCertificado": 1,
+      "id": 1
+    },
+    {
+      "titulo": "Introduccion a la base de datos Relacionales (con MySQL)",
+      "institucionEducativa": "Todo Code Academy",
+      "añoInicio": "2024",
+      "horasAcademica": "3 Hs",
+      "codigo": "Second slide",
+      "url": "",
+      "fotoCertificado": 2,
       "id": 2
     },
     {
-      "titulo": "",
-      "institucionEducativa": "",
-      "añoInicio": "",
-      "horasAcademica": "",
+      "titulo": "Programacion desde Cero",
+      "institucionEducativa": "Egg Company",
+      "añoInicio": "2022",
+      "horasAcademica": "81 Hs",
       "codigo": "",
       "url": "",
-      "fotoCertificado": "",
+      "fotoCertificado": 3,
       "id": 3
+    },
+    {
+      "titulo": "Foundational C# With Microsoft",
+      "institucionEducativa": "Todo Code Academy",
+      "añoInicio": "2023",
+      "horasAcademica": "300 Hs",
+      "codigo": "",
+      "url": "",
+      "fotoCertificado": 4,
+      "id": 4
+    },
+    {
+      "titulo": "Ingles General Para Desarrollador de Software",
+      "institucionEducativa": "Centro Universitario de Idiomas",
+      "añoInicio": "2023",
+      "horasAcademica": "50 Hs",
+      "codigo": "",
+      "url": "",
+      "fotoCertificado": 5,
+      "id": 5
+    },
+    {
+      "titulo": "Aprende Scrum",
+      "institucionEducativa": "Linkedin Learning",
+      "añoInicio": "2022",
+      "horasAcademica": "1:32 Hs",
+      "codigo": "",
+      "url": "",
+      "fotoCertificado": 6,
+      "id": 6
+    },
+    {
+      "titulo": "SeProgramar",
+      "institucionEducativa": "Argentina Programa",
+      "añoInicio": "2021",
+      "horasAcademica": " ",
+      "codigo": "",
+      "url": "",
+      "fotoCertificado": 7,
+      "id": 7
+    },
+    {
+      "titulo": "Yo Programo - Web Full Stack Jr",
+      "institucionEducativa": "Argetina Programa 4.0",
+      "añoInicio": "2024",
+      "horasAcademica": "400 Hs",
+      "codigo": "",
+      "url": "",
+      "fotoCertificado": 8,
+      "id": 8
+    },
+    {
+      "titulo": "Bases de la Informatica en la nube para administradores",
+      "institucionEducativa": "Microsoft",
+      "añoInicio": "2022",
+      "horasAcademica": "2:05 Hs",
+      "codigo": "",
+      "url": "",
+      "fotoCertificado": 9,
+      "id": 9
+    },
+    {
+      "titulo": "Desarrollo Web I",
+      "institucionEducativa": "Google Activate",
+      "añoInicio": "2022",
+      "horasAcademica": "40 Hs",
+      "codigo": "",
+      "url": "",
+      "fotoCertificado": 10,
+      "id": 10
+    },
+    {
+      "titulo": "Desarrollo Web II",
+      "institucionEducativa": "Google Activate",
+      "añoInicio": "2024",
+      "horasAcademica": "40 Hs",
+      "codigo": "",
+      "url": "",
+      "fotoCertificado": 11,
+      "id": 11
     }
   ],
   "Skill": [
     {
       "id": 1,
+      "nombreSkill": "ADO.Net",
+      "porcentaje": "70"
+    },
+    {
+      "nombreSkill": "CSharp",
+      "porcentaje": "90",
+      "id": 2
+    },
+    {
+      "nombreSkill": "CSS",
+      "porcentaje": "60",
+      "id": 3
+    },
+    {
       "nombreSkill": "HTML",
-      "porcentaje": "95",
-      "color": "",
-      "icono": ""
+      "porcentaje": "80",
+      "id": 4
+    },
+    {
+      "nombreSkill": "MySQL",
+      "porcentaje": "60",
+      "id": 5
+    },
+    {
+      "nombreSkill": "NodeJs",
+      "porcentaje": "50",
+      "id": 6
+    },
+    {
+      "nombreSkill": "React",
+      "porcentaje": "85",
+      "id": 7
+    },
+    {
+      "nombreSkill": "SQL",
+      "porcentaje": "60",
+      "id": 8
+    },
+    {
+      "nombreSkill": "JS",
+      "porcentaje": "90",
+      "id": 9
     }
   ],
   "Proyectos": [

@@ -17,6 +17,7 @@
     border-radius:30px;
     padding: 5px;
     box-shadow: 0 0 20px rgb(220, 100, 30);
+    background-image: url("../Img/tasaJS.png");
     }
     .navOpciones:hover{
         transform: scale(1.08);

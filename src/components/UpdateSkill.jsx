@@ -1,14 +1,13 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams,Link } from "react-router-dom";
+import "../CSS/Skill.css"
 
 const UpdateSkill = () => {
   const navigate = useNavigate();
   const initialState = {
     nombreSkill: "",
-    porcentaje: "",
-    color: "",
-    icono: "",
+    porcentaje: ""
   };
   const [datos, setDatos] = useState(initialState);
   const { id } = useParams();
@@ -21,13 +20,11 @@ const UpdateSkill = () => {
     try {
       let response = await axios.put("http://localhost:3001/Skill/" + id, {
         nombreSkill: datos.nombreSkill,
-        porcentaje: datos.porcentaje,
-        color: datos.color,
-        icono: datos.icono,
+        porcentaje: datos.porcentaje
       });
       if (response) {
         alert("Skill actualizado correctamente");
-        navigate("/home");
+        navigate("/home/skills");
       }
     } catch (error) {
       console.log(error);
@@ -41,9 +38,11 @@ const UpdateSkill = () => {
   }, []);
   return (
     <div>
+      <br />
+        <br />
+      <div className="actualizarskill">
       <form action="" onSubmit={handleSubmit}>
-        <br />
-        <br />
+        
         <h3>Actualizar Skill</h3>
         <br />
         <br />
@@ -55,18 +54,12 @@ const UpdateSkill = () => {
         <input type="number" onChange={handleChange} name="porcentaje" value={datos.porcentaje}/>
         <br />
         <br />
-        <label htmlFor="">Color : </label>
-        <input type="text" onChange={handleChange} name="color" value={datos.color}/>
-        <br />
-        <br />
-        <label htmlFor="">Icono : </label>
-        <input type="text" onChange={handleChange} name="icono" value={datos.icono}/>
-        <br />
-        <br />
-        <button type="submit" className="btn btn-success">
-          GUARDAR
-        </button>
+        <div className="botones">
+        <button type="submit" className="btn btn-success"> GUARDAR</button>
+        <Link to={"/home/skills"} className="btn btn-warning">VOLVER</Link>
+        </div>
       </form>
+      </div>
     </div>
   );
 };

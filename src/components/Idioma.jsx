@@ -6,6 +6,9 @@ import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { IoMdAddCircleOutline } from "react-icons/io";
 import NavOpciones from "./NavOpciones";
+import Footer from "./Footer"
+import "../CSS/Idioma.css"
+
 
 const Idioma = () => {
 
@@ -33,9 +36,12 @@ useEffect(()=>{getIdioma()},[])
       <br /><br />
       <NavOpciones/>
       <br />
-      <h3>IDIOMAS <Link to={"/home/create/idioma"}><IoMdAddCircleOutline/></Link></h3>
+      <h3 className="idioma text-success">IDIOMAS <Link to={"/home/create/idioma"}><IoMdAddCircleOutline/></Link></h3>
       <hr />
-      {idiomas.map(idioma =><Card key={idioma.id} style={{ width: '30rem' }} >
+      <div className="contenedorIdioma">
+        <div className="Card">
+          <div><br /><br /></div>
+      {idiomas.map(idioma =><Card className="CardIdioma" key={idioma.id} style={{ width: '30rem' }} >
           <Card.Body >
             
             <Card.Title>{idioma.id} - Idioma : {idioma.idiomaNuevo}</Card.Title>
@@ -45,7 +51,8 @@ useEffect(()=>{getIdioma()},[])
           </Card.Body>
           
         </Card>)}
-
+        </div></div>
+      <Footer/>
     </div>
   )
 }

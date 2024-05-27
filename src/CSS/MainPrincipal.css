@@ -8,6 +8,12 @@
     padding: 0px;
     /* box-sizing: border-box; */
 }
+/* .fondo{
+    background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+} */
 
 div.container{
 width: 30px;
@@ -38,4 +44,28 @@ img {
 img:hover{
     transform: scale(1.2);
     border-color: #646cff;
+}
+.imagenFormacion{
+    width: 200%;
+    height: 90%;
+}
+.imagenIdioma{
+    width: 200%;
+    height: 90%;
+}
+.imagenCertificado{
+    width: 250%;
+    height: 180%;
+}
+.imagenExperiencia{
+    width: 200%;
+    height: 90%;
+}
+.imagenSkill{
+    width: 200%;
+    height: 90%;
+}
+.imagenProyecto{
+    width: 200%;
+    height: 90%;
 }

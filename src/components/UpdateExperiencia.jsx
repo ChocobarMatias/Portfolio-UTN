@@ -1,6 +1,7 @@
 import {useState,useEffect} from "react";
-import {useParams, useNavigate} from "react-router-dom";
+import {useParams, useNavigate,Link} from "react-router-dom";
 import axios from "axios";
+import "../CSS/Experiencia.css"
 
 const UpdateExperiencia = () => {
 
@@ -34,7 +35,7 @@ try{
   })
   if(response){
 alert("Actualizacion correcta")
-navigate("/home")
+navigate("/home/experiencias")
   }}catch (error){
     console.log(error);
   }}
@@ -47,7 +48,8 @@ return (
        <br/>
       <br/>
       <h3>Agregar Experiencia Laboral</h3>
-      <br/>
+      <br/><hr/><br/>
+      <div className="actualizarexperiencia">
       <form action="" onSubmit={handleSubmit}>
       <label htmlFor="">Cargo : </label>
         <input type="text" onChange={handleChange} name="cargo" value={datos.cargo}/>
@@ -68,7 +70,9 @@ return (
         <input type="text" onChange={handleChange} name="desempeño" value={datos.desempeño}/>
         <br/><br/>
         <button type="submit" className="btn btn-success">Guardar</button>
+        <Link to={"/home/experiencias"} className="btn btn-warning">VOLVER</Link>
       </form>
+    </div>
     </div>
   )
 }

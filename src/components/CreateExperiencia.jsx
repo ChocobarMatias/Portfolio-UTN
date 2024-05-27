@@ -1,6 +1,7 @@
 import {useState} from "react";
 import axios from "axios";
 import {useNavigate, Link} from "react-router-dom"
+import "../CSS/Experiencia.css"
 
 
 
@@ -34,7 +35,7 @@ try{
 })
 if(response){
 alert("Experiencia Creada Correctamente");
-navigate("/home");
+navigate("/home/experiencias");
 }
 }catch (error){
   console.log(error)
@@ -45,6 +46,8 @@ navigate("/home");
       <br/>
       <h3>Agregar Experiencia Laboral</h3>
       <br/>
+
+      <div className="crearexperiencia">
        <form action="" onSubmit={handleSubmit}>
        <label htmlFor="">Cargo : </label>
         <input type="text" onChange={handleChange} name="cargo"/>
@@ -64,9 +67,12 @@ navigate("/home");
         <label htmlFor="">Tarea : </label>
         <input type="text" onChange={handleChange} name="desempeño"/>
         <br/><br/>
+        <div className="botones">
          <button type="submit" className="btn btn-success">Guardar</button>
-         <Link to={"/home"} className="btn btn-warning">Volver</Link>
+         <Link to={"/home/experiencias"} className="btn btn-warning">Volver</Link>
+         </div>
        </form>  
+    </div>
     </div>
   )
 }

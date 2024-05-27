@@ -28,7 +28,7 @@ function App() {
   
 
   return (
-    <>
+    <div className="fondo">
     <BrowserRouter>
     <Routes>
       <Route path ="/" element={<Login/>}/>
@@ -57,7 +57,7 @@ function App() {
     </Routes>
     
     </BrowserRouter>
-    </>
+    </div>
   )
 }
 

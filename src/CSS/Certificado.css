@@ -1,0 +1,58 @@
+
+.Descripcion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    backdrop-filter: blur(10px);
+    background-color: #c3f02f30;
+    border: 30px solid rgba(255, 255, 255, 0.23);
+    border-radius:30px;
+    padding: 2px;
+    box-shadow: 0 0 20px rgb(220, 100, 30);
+}
+.contenedor2{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+/* Crear Certificado */
+.crearcertificado{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    backdrop-filter: blur(10px);
+    background-color: #c3f02f30;
+    border: 30px solid rgba(255, 255, 255, 0.23);
+    border-radius:30px;
+    padding: 2px;
+    box-shadow: 0 0 20px rgb(220, 100, 30);
+}
+.botones{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/* actualizar certificado */
+.actualizarcertificado{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    backdrop-filter: blur(10px);
+    background-color: #c3f02f30;
+    border: 30px solid rgba(255, 255, 255, 0.23);
+    border-radius:30px;
+    padding: 2px;
+    box-shadow: 0 0 20px rgb(220, 100, 30);
+}
