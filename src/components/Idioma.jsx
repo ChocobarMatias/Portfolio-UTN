@@ -36,20 +36,21 @@ useEffect(()=>{getIdioma()},[])
       <br /><br />
       <NavOpciones/>
       <br />
-      <h3 className="idioma text-success">IDIOMAS <Link to={"/home/create/idioma"}><IoMdAddCircleOutline/></Link></h3>
+      <div className="idiomaprincipal">
+      <div className="idioma">
+      <h3 className=" text-white text-center">IDIOMAS : <Link to={"/home/create/idioma"}><IoMdAddCircleOutline className="iconidioma"/></Link></h3>
+      </div>
       <hr />
-      <div className="contenedorIdioma">
-        <div className="Card">
-          <div><br /><br /></div>
-      {idiomas.map(idioma =><Card className="CardIdioma" key={idioma.id} style={{ width: '30rem' }} >
+      <div className="contenedorIdioma text-white">
+          
+      {idiomas.map(idioma =><Card className="CardIdioma text-white" key={idioma.id} style={{ width: '80rem' }} >
           <Card.Body >
             
-            <Card.Title>{idioma.id} - Idioma : {idioma.idiomaNuevo}</Card.Title>
-            <Card.Subtitle className="mb-2 text-center">Nivel : {idioma.nivel}</Card.Subtitle>
-            <Link to={`/home/update/idioma/${idioma.id}`} className="btn btn-warning"><FaEdit /></Link> 
-            <Button onClick={(()=>handleClick(idioma.id))} className="btn btn-danger"><MdDelete /></Button>
+            <Card.Title><h2>{idioma.id} - Idioma : {idioma.idiomaNuevo}</h2></Card.Title>
+            <Card.Subtitle className="mb-2 text-center"><h2>Nivel : {idioma.nivel}</h2></Card.Subtitle>
+            <Link to={`/home/update/idioma/${idioma.id}`} className="btn btn-warning"><FaEdit className="iconidioma"/></Link> 
+            <Button onClick={(()=>handleClick(idioma.id))} className="btn btn-danger"><MdDelete className="iconidioma"/></Button>
           </Card.Body>
-          
         </Card>)}
         </div></div>
       <Footer/>

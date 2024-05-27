@@ -20,6 +20,7 @@ import imagen10 from "../assets/imagen10.jpg";
 import imagen11 from "../assets/imagen11.jpg";
 import "../CSS/Certificado.css"
 import Caurosel from "../components/Caurosel"
+import Footer from '../components/Footer'
 
 
 // import {Certif1} from "../Img/1.jpg"
@@ -51,15 +52,16 @@ useEffect(()=>{getCertificacion()},[])
     <div>
       <br /><br />
       <NavOpciones/><br /><br /><br />
-      <h3 className="text-white">CERTIFICADOS : <Link to={"/home/create/certificado"}><IoMdAddCircleOutline/></Link></h3>
+      <h3 className="text-white">CERTIFICADOS : <Link to={"/home/create/certificado"}><IoMdAddCircleOutline className="iconcertificado"/></Link></h3>
       <br /><br />
       <hr />
-      
+
+      <div className="contcertificado">
       {certificados.map(certificado=>
         <form action="" key={certificado.id}>
         <br /><br />
         
-        <img  className="d-block w-100" width={"50%"}  src={certificado.fotoCertificado == 1 ? imagen1 : certificado.fotoCertificado == 2 ?
+        <img  className="d-block w-100" id="certificadoimg" width={"30%"}  src={certificado.fotoCertificado == 1 ? imagen1 : certificado.fotoCertificado == 2 ?
           imagen2 : certificado.fotoCertificado == 3 ? imagen3 : certificado.fotoCertificado == 4 ? imagen4 :certificado.fotoCertificado == 5 ? imagen5 :
           certificado.fotoCertificado == 6 ? imagen6 : certificado.fotoCertificado == 7 ? imagen7 :certificado.fotoCertificado == 8 ? imagen8 :
           certificado.fotoCertificado == 9 ? imagen9 :certificado.fotoCertificado == 10 ? imagen10 :certificado.fotoCertificado == 11 ? imagen11 :imagen11 } alt="First slide" />
@@ -84,9 +86,8 @@ useEffect(()=>{getCertificacion()},[])
           </div> 
           </div>
         </form>
-      )}
-
-      
+      )}</div>
+      <Footer/>
     </div>
   )
 }

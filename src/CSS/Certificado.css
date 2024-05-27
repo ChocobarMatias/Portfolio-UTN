@@ -34,11 +34,14 @@
     border-radius:30px;
     padding: 2px;
     box-shadow: 0 0 20px rgb(220, 100, 30);
+    font-size: 150%;
+    /* margin-right: 2%; */
 }
-.botones{
+.botonescertificado{
     display: flex; 
     justify-content: space-between; 
     align-items: center;
+    
 }
 
 /* actualizar certificado */
@@ -55,8 +58,26 @@
     border-radius:30px;
     padding: 2px;
     box-shadow: 0 0 20px rgb(220, 100, 30);
+    font-size: 150%;
 }
 .iconcertificado{
     font-size: 300%;
+    margin-right: 2%;
+}
+#certificadoimg{
+    width: 10%;
+    height: 5%;
+}
+.contcertificado{
+    width: 50%;
+    height: 5%;
+    margin-left:25%;
+}
+.iconcertificadocrear{
+    font-size: 100%;
+    margin-right: 2%;
+}
+.iconcertificadoact{
+    font-size: 100%;
     margin-right: 2%;
 }

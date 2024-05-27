@@ -47,11 +47,11 @@ const handleSubmit = async(e) =>{
       <div>
         <br/>
         <br/>
-        <h3>Agregar Nuevo Certificado</h3>
+        <h3 className="text-white">Agregar Nuevo Certificado</h3>
         <br/>
         <hr />
         <br />
-        <div className="crearcertificado">
+        <div className="crearcertificado text-white">
         <form action="" onSubmit={handleSubmit}>
         <label htmlFor="">Titulo : </label>
         <input type="text" onChange={handleChange} name="titulo"/>
@@ -74,9 +74,9 @@ const handleSubmit = async(e) =>{
         <label htmlFor="">Certificado : </label>
         <input type="text" onChange={handleChange} name="fotoCertificado"/>
         <br/><br/>
-        <div className="botones">
-        <button type="submit" className="btn btn-success">GUARDAR</button>
-        <Link to={"/home/certificados"} className="btn btn-warning">VOLVER</Link>
+        <div className="botonescertificado">
+        <button type="submit" className="iconcertificadocrear btn btn-success">GUARDAR</button>
+        <Link to={"/home/certificados"} className="iconcertificadocrear btn btn-warning">VOLVER</Link>
         </div>
         </form>
         </div>

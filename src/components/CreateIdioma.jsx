@@ -36,7 +36,7 @@ const handleSubmit = async(e)=>{
     <div>
       <br/>
       <br/>
-      <h3>Agregar Idioma que maneja</h3>
+      <h3 className="text-white">Agregar Idioma que maneja</h3>
       <br/>
       <hr />
       <br />
@@ -44,7 +44,7 @@ const handleSubmit = async(e)=>{
       <form action="" onSubmit={handleSubmit}>
       <Col md={1}></Col>
         <Col md={10}>
-      <div className="crearIdioma"> 
+      <div className="crearIdioma text-white"> 
       <label htmlFor="">Idioma Nuevo : </label>
         <input type="text" onChange={handleChange} name="idiomaNuevo"/>
         <br /><br />
@@ -58,12 +58,12 @@ const handleSubmit = async(e)=>{
         <Col md={3}>
           <br />
           <div>
-        <button type="submit" className="btn btn-success">GUARDAR</button>
+        <button type="submit" className="iconcrearidioma btn btn-success">GUARDAR</button>
         <br /></div></Col>
         <Col md={1}>
         <div><br />
           <div>
-        <Link to={"/home/idiomas"} className="btn btn-warning">VOLVER</Link></div>
+        <Link to={"/home/idiomas"} className="iconcrearidioma btn btn-warning">VOLVER</Link></div>
         </div></Col></Row>
       </form></Row>
     </div>

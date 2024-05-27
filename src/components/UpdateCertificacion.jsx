@@ -49,11 +49,11 @@ useEffect(()=>{getDatos()},[])
       <div>
         <br/>
         <br/>
-        <h3>Actualizar Certificacion</h3>
+        <h3 className="text-white">Actualizar Certificacion</h3>
         <br/>
         <hr />
         <br />
-        <div className="actualizarcertificado">
+        <div className="actualizarcertificado text-white">
         <form action="" onSubmit={handleSubmit}>
         <label htmlFor="">Titulo : </label>
         <input type="text" onChange={handleChange} name="titulo" value={datos.titulo}/>
@@ -77,8 +77,8 @@ useEffect(()=>{getDatos()},[])
         <input type="text" onChange={handleChange} name="fotoCertificado" value={datos.fotoCertificado}/>
         <br/><br/>
         <div className="botones">
-        <button type="submit" className="btn btn-success">GUARDAR</button>
-        <Link to={"/home/certificados"} className="btn btn-warning">VOLVER</Link>
+        <button type="submit" className="iconcertificadoact btn btn-success">GUARDAR</button>
+        <Link to={"/home/certificados"} className="iconcertificadoact btn btn-warning">VOLVER</Link>
         </div>
         </form>
         </div>

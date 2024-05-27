@@ -1,6 +1,6 @@
 import axios from "axios"
 import {useState,useEffect} from "react"
-import { useParams,useNavigate } from "react-router-dom"
+import { useParams,useNavigate,Link } from "react-router-dom"
 import {Row, Col} from "react-bootstrap"
 import "../CSS/Idioma.css"
 
@@ -43,7 +43,7 @@ useEffect(()=>{getDatos()},[]);
     return (
       <div>
         <br /><br />
-        <h3>Acualizar Idioma</h3>
+        <h3 className="text-white">Actualizar Idioma</h3>
         <br/>
         <hr />
         <br />
@@ -51,9 +51,8 @@ useEffect(()=>{getDatos()},[]);
 <form action="" onSubmit={handleSubmit}>
 <Col md={1}></Col>
         <Col md={10}>
-        <div className="actualizarIdioma"> 
-  <br /><br />
-  <h3>Actualizar Idioma</h3>
+        <div className="actualizarIdioma text-white"> 
+
   <br /><br />
   <label htmlFor="">Idioma Nuevo : </label>
   <input type="text" onChange={handleChange} name="idiomaNuevo" value={datos.idiomaNuevo}/>
@@ -66,7 +65,8 @@ useEffect(()=>{getDatos()},[]);
         <Row>
           <Col md={3}></Col>
         <Col md={3}>
-  <button type="submit" className="btn btn-success">GUARDAR</button>
+  <button type="submit" className="idiomabotonact btn btn-success">GUARDAR</button>
+  <Link to={"/home/idiomas"} className="idiomabotonact  iconcrearidioma btn btn-warning">VOLVER</Link>
   </Col></Row>
 </form></Row>
       </div>
