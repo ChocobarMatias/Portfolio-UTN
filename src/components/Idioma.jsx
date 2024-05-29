@@ -53,7 +53,9 @@ useEffect(()=>{getIdioma()},[])
           </Card.Body>
         </Card>)}
         </div></div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <Footer/>
+      
     </div>
   )
 }

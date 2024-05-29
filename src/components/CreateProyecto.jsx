@@ -39,15 +39,22 @@ const handleSubmit = async(e) =>{
       <div>
         <br/>
       <br/>
-      <h3>Agregar Proyecto</h3>
+      <h3 className="text-white">Agregar Proyecto</h3>
       <br/>
+      <div className="contenedorcrear">
       <form action="" onSubmit={handleSubmit}>
-        <label htmlFor="">Nombre del Proyecto : </label>
-        <input type="text" onChange={handleChange} name="nombreProyecto"/>
+      <label htmlFor=""><h4 className="form text-white">Nombre del Proyecto : </h4></label>
+           <input type="text" onChange={handleChange} name ="nombreProyecto"/>
         <br /><br />
+           <label htmlFor=""><h4 className="form text-white">Desccripcion : </h4></label>
+           <input type="text" onChange={handleChange} name ="descripcion" />
+           <br /><br />
+           <label htmlFor=""><h4 className="form text-white">Repositorio : </h4></label>
+           <input type="text" onChange={handleChange} name ="repositorio"/>
+           <br /><br />
         <button type="submit" className="btn btn-success">GUARDAR</button>
         <Link to={"/home/proyectos"} className="btn btn-warning">VOLVER</Link>
-        </form>
+        </form></div>
       </div>
     )
   }

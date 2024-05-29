@@ -57,7 +57,7 @@ const MainPrincipal = () => {
         {/* <Col md={2}></Col> */}
       </Row>
       </div>
-      <br /><br /><br /><hr />
+      <br /><br /><br /><br /><br /><br /><hr />
       <hr />
       <Contactame />
       <hr />

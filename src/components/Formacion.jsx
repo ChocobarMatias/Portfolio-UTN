@@ -46,7 +46,7 @@ useEffect(()=>{getFormaciones()},[]);
   
       <hr />
       <div>
-      <h3 className="formacion text-success">FORMACION <Link to={"/home/create/formacion"}><IoMdAddCircleOutline/></Link></h3>
+      <h3 className="formacion text-white">FORMACION <Link to={"/home/create/formacion"}><IoMdAddCircleOutline/></Link></h3>
       </div>
       <br />
       <br />
@@ -54,7 +54,7 @@ useEffect(()=>{getFormaciones()},[]);
       <div className="contenedorFormacion">
         <div className="Card">
           <div><br /><br /></div>
-      {formaciones.map(formacion => <Card className="CardF" key={formacion.id} style={{ width: '40rem'  }} >
+      {formaciones.map(formacion => <Card className="CardF text-white" key={formacion.id} style={{ width: '40rem'  }} >
           <Card.Body >
             <Row>
               <Col md={1}>

@@ -7,6 +7,7 @@ import { MdDelete } from "react-icons/md";
 import { IoMdAddCircleOutline } from "react-icons/io";
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import Footer from "./Footer";
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import NavOpciones from "./NavOpciones";
 import skill1 from "../assets/skill1.png";
@@ -47,22 +48,28 @@ useEffect(()=>{getSkill()},[])
       <NavOpciones/><br />
   <h3>SKILL<Link to = {"/home/create/skill"}><IoMdAddCircleOutline/></Link></h3>
   <hr />
-  <Row md={5}>
-  {skills.map(skill =>
+  
+    <div className="containerSkill">
+    <Row md={3}>
+   {skills.map(skill =>
+   <div key={skill.id}>
   <form action="" key={skill.id}  style={{ width: '10rem' }} >
 
 <br /><br />
-  <Col md={5}><img width="200" height="200" src={skill.id ==1 ? skill1 :skill.id ==2 ? skill2:skill.id ==3 ?skill3:skill.id ==4 ? skill4:skill.id ==5 ?skill5 :skill.id ==6 ? skill6 :skill.id ==7 ?
+  <Col ><img width="200" height="200" src={skill.id ==1 ? skill1 :skill.id ==2 ? skill2:skill.id ==3 ?skill3:skill.id ==4 ? skill4:skill.id ==5 ?skill5 :skill.id ==6 ? skill6 :skill.id ==7 ?
     skill7:skill.id ==8 ? skill8 :skill.id ==9 ? skill9:skill9
      } alt=""/></Col>
-  <h3>{skill.nombreSkill}</h3>
+  <h3 className="text-white">{skill.nombreSkill}</h3>
   <br /><br />
-<CircularProgressbar value={skill.porcentaje} text={`${skill.porcentaje}%`} />;
+<CircularProgressbar className="circulpro text-white" value={skill.porcentaje} text={`${skill.porcentaje}%`} />;
 <br /><br />
   <Link to={`/home/update/skill/${skill.id}`} className="btn btn-warning"><FaEdit /></Link> 
 <Button onClick={(()=>handleClick(skill.id))} className="btn btn-danger"><MdDelete /></Button>
-</form>)}
-</Row>
+</form></div>)}
+
+</Row></div>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <Footer/>
 </div>
   )
 }

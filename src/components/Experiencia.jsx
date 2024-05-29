@@ -6,6 +6,7 @@ import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { IoMdAddCircleOutline } from "react-icons/io";
 import NavOpciones from "./NavOpciones";
+import Footer from "./Footer"
 import "../CSS/Experiencia.css"
 
 const Experiencia = () => {
@@ -57,7 +58,8 @@ useEffect(()=>{getExperiencia()},[]);
           
         </Card>)}
         </div>
-
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <Footer/>
       </div>
   )
 }
