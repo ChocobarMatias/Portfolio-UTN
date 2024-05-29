@@ -45,32 +45,34 @@ if(response){
     <div>
       <br/>
       <br/>
-      <h3>Agregar Formacion Academica</h3>
+      <h3 className="text-white">Agregar Formacion Academica</h3>
       <br/>
       <hr/>
       <br/>
       <Row>
-      <form  action="" onSubmit={handleSubmit}>
+      <form  className="text-white" action="" onSubmit={handleSubmit}>
         <Col md={1}></Col>
         <Col md={10}>
        <div className="crearFormacion"> 
-        <label htmlFor=""><h3>Titulo :</h3> </label>
-        <input type="text" onChange={handleChange} name="titulo"/>
+       <br />
+        <label className="label" htmlFor=""><h3>Titulo :</h3> </label>
+        <input className="input" type="text" onChange={handleChange} name="titulo"/>
         <br/><br/>
-        <label htmlFor="">Entidad Academica : </label>
-        <input type="text" onChange={handleChange} name="institucionEducativa"/>
+        <label  htmlFor=""><h3>Entidad Academica : </h3></label>
+        <input className="input" type="text" onChange={handleChange} name="institucionEducativa"/>
         <br/><br/>
-        <label htmlFor="">Año de Inicio : </label>
-        <input type="text" onChange={handleChange} name="añoInicio"/>
+        <label  htmlFor=""><h3>Año de Inicio : </h3></label>
+        <input className="input" type="text" onChange={handleChange} name="añoInicio"/>
         <br/><br/>
-        <label htmlFor="">Año de Fin Estimado : </label>
-        <input type="text" onChange={handleChange} name="añoFinEstimado"/>
+        <label htmlFor=""><h3>Año de Fin Estimado : </h3></label>
+        <input className="input" type="text" onChange={handleChange} name="añoFinEstimado"/>
         <br/><br/>
-        <label htmlFor="">Estado : </label>
-        <input type="text" onChange={handleChange} name="estado"/>
+        <label htmlFor=""><h3>Estado : </h3></label>
+        <input className="input" type="text" onChange={handleChange} name="estado"/>
         <br/><br/>
-        <label htmlFor="">Logo : </label>
-        <input type="text" onChange={handleChange} name="logo"/>
+        <label htmlFor=""><h3>Logo : </h3></label>
+        <input className="input" type="text" onChange={handleChange} name="logo"/>
+        <br />
         <br/> </div> <br />
         </Col>
         <Col md={1}></Col>
@@ -78,12 +80,14 @@ if(response){
           <Col md={3}></Col>
         <Col md={3}>
         <div>
-        <button type="submit" className="btn btn-success">Guardar</button>
+          <br />
+        <button type="submit" className="btncrearfor btn btn-success">Guardar</button>
         <br /><br /></div></Col>
        
         <Col md={1}>
         <div>
-        <Link to={"/home/formacion"} className="btn btn-warning">Volver</Link>
+          <br />
+        <Link to={"/home/formacion"} className="btncrearfor btn btn-warning">Volver</Link>
         </div></Col></Row>
         </form></Row>
     </div>

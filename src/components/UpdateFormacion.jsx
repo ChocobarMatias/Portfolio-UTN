@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import {useParams, useNavigate} from "react-router-dom";
+import {useParams, useNavigate,Link} from "react-router-dom";
 import axios from "axios";
 import "../CSS/UpdateFormacion.css"
 import {Row, Col} from "react-bootstrap"
@@ -54,40 +54,46 @@ useEffect(()=>{getDatos()},[]);
     <div>
       <br/>
       <br/>
-      <h3>Agregar Formacion Academica</h3>
+      <h3 className="text-white">Agregar Formacion Academica</h3>
       <br/>
       <Row>
-      <form action="" onSubmit={handleSubmit}>
+      <form action="" className="text-white"onSubmit={handleSubmit}>
+        <br />
       <Col md={1}></Col>
         <Col md={10}>
         <div className="actualizarFormacion"> 
-        <label htmlFor="">Titulo : </label>
-        <input type="text" onChange={handleChange} name="titulo" value={datos.titulo}/>
+        <label className="label" htmlFor=""><h3>Titulo : </h3></label>
+        <input className="input" type="text" onChange={handleChange} name="titulo" value={datos.titulo}/>
         <br/><br/>
-        <label htmlFor="">Entidad Academica : </label>
-        <input type="text" onChange={handleChange} name="institucionEducativa" value={datos.institucionEducativa}/>
+        <label className="label" htmlFor=""><h3>Entidad Academica : </h3></label>
+        <input className="input" type="text" onChange={handleChange} name="institucionEducativa" value={datos.institucionEducativa}/>
         <br/><br/>
-        <label htmlFor="">Año de Inicio : </label>
-        <input type="text" onChange={handleChange} name="añoInicio" value={datos.añoInicio}/>
+        <label className="label" htmlFor=""><h3>Año de Inicio : </h3></label>
+        <input className="input" type="text" onChange={handleChange} name="añoInicio" value={datos.añoInicio}/>
         <br/><br/>
-        <label htmlFor="">Año de Fin Estimado : </label>
-        <input type="text" onChange={handleChange} name="añoFinEstimado" value={datos.añoFinEstimado}/>
+        <label className="label" htmlFor=""><h3>Año de Fin Estimado : </h3></label>
+        <input className="input" type="text" onChange={handleChange} name="añoFinEstimado" value={datos.añoFinEstimado}/>
         <br/><br/>
-        <label htmlFor="">Estado : </label>
-        <input type="text" onChange={handleChange} name="estado" value={datos.estado}/>
+        <label className="label" htmlFor=""><h3>Estado : </h3></label>
+        <input className="input" type="text" onChange={handleChange} name="estado" value={datos.estado}/>
         <br/><br/>
-        <label htmlFor="">Logo : </label>
-        <input type="text" onChange={handleChange} name="logo" value={datos.logo}/>
+        <label className="label" htmlFor=""><h3>Logo : </h3></label>
+        <input className="input" type="text" onChange={handleChange} name="logo" value={datos.logo}/>
         <br/></div><br/>
+        <br />
         </Col>
         <Col md={1}></Col>
         <Row>
           <Col md={3}></Col>
         <Col md={3}>
-        <button type="submit" className="btn btn-success">Guardar</button>
-        <br /><br /></Col></Row>
-        </form>
-        </Row>
+        <button type="submit" className="btnactfor btn btn-success">Guardar</button>
+        </Col>
+        <Col md={1}>
+        <div>
+        
+        <Link to={"/home/formacion"} className="btnactfor btn btn-warning">Volver</Link>
+        </div></Col> </Row>
+        </form></Row>
     </div>
   )
 }

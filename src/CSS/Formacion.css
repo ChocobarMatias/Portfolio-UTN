@@ -7,15 +7,19 @@
     border-radius:90px;
     padding: 32px;
     box-shadow: 0 0 20px rgb(220, 100, 30);
+    font-size: larger;
 }
-.formacion{
+/* .formacion{
     display: flex;
     justify-content: center;
     background-color: aliceblue;
-}
+} */
 .contenedorFormacion{
     /* background-color: red; */
     display: flex;
     justify-content: center;
     padding: 10px;
+}
+.hr{
+    color:#ffff
 }
