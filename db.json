@@ -199,20 +199,20 @@
   "Proyectos": [
     {
       "nombreProyecto": "Porfolio-UTN",
-      "descripcion":"Proyecto creado en React-Vite en el cual use, Nodejs,React-Bootstrap,CSS,MySQL,Express,CRUD,Routing,Hook",
-      "repositorio":"https://github.com/ChocobarMatias/Portfolio-UTN",
+      "descripcion": "Proyecto creado en React-Vite en el cual use, Nodejs,React-Bootstrap,CSS,MySQL,Express,CRUD,Routing,Hook",
+      "repositorio": "https://github.com/ChocobarMatias/Portfolio-UTN",
       "id": 1
     },
     {
       "nombreProyecto": "Calculadora-Windows-Form",
-      "descripcion":"Calculadora creada con .Net es una App de escritorio",
-      "repositorio":"https://github.com/ChocobarMatias/Calculadora-Simple---Windows-Forms",
+      "descripcion": "Calculadora creada con .Net es una App de escritorio",
+      "repositorio": "https://github.com/ChocobarMatias/Calculadora-Simple---Windows-Forms",
       "id": 2
     },
     {
       "nombreProyecto": "Temporizador Windows Form",
-      "descripcion":"Temporizador creado con .Net es una App de esccritorio",
-      "repositorio":"https://github.com/ChocobarMatias/Temporizador-Hotel-Alojamiento",
+      "descripcion": "Temporizador creado con .Net es una App de esccritorio",
+      "repositorio": "https://github.com/ChocobarMatias/Temporizador-Hotel-Alojamiento",
       "id": 3
     }
   ],

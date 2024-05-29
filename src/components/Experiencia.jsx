@@ -42,14 +42,14 @@ useEffect(()=>{getExperiencia()},[]);
       <div className="contenedorexperiencia">
       
       <div><br /><br /></div>
-      {experiencias.map(experiencia =><Card className="CardE" key={experiencia.id} style={{ width: '30rem' }} >
+      {experiencias.map(experiencia =><Card className="CardE" key={experiencia.id} style={{ width: '80rem' }} >
       
           <Card.Body >
             <Card.Img variant="top" src="" style={{ width: "50px", height: "50px" }} />
-            <Card.Title className="text-white">{experiencia.id} - {experiencia.cargo}</Card.Title>
-            <Card.Subtitle className="mb-2 text-center text-white">{experiencia.empresa}</Card.Subtitle>
-            <Card.Text className="text-white">
-              {experiencia.añoInicio} – {experiencia.añoFinal} - ({experiencia.estadoActual})
+            <Card.Title className="text-white"><h3>{experiencia.id} - {experiencia.cargo}</h3></Card.Title>
+            <Card.Subtitle className="mb-2 text-center text-white"><h3>{experiencia.empresa}</h3></Card.Subtitle>
+            <Card.Text className="text-white"><h3>
+              {experiencia.añoInicio} – {experiencia.añoFinal} - ({experiencia.estadoActual})</h3>
             </Card.Text>
          
             <Link to={`/home/update/experiencia/${experiencia.id}`} className="btn btn-warning"><FaEdit className="iconcrearexperiencia" /></Link> 

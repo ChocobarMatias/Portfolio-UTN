@@ -35,9 +35,10 @@ const handleSubmit = async(e)=>{
     <div>
       <br/>
       <br/>
-      <h3>Agregar Nuevo Skill</h3>
+      <h3 className="text-white">Agregar Nuevo Skill</h3>
       <br/>
-      <div className="crearskill">
+      <div className="crearskill text-white h3">
+      <br/>
       <form action="" onSubmit={handleSubmit}>
         <label htmlFor="">Nombre del Skill : </label>
         <input type="text" onChange={handleChange} name="nombreSkill"/>
@@ -46,8 +47,8 @@ const handleSubmit = async(e)=>{
         <input type="number" onChange={handleChange} name="porcentaje"/>
         <br /><br />
         <div className="botones">
-        <button type="submit" className="btn btn-success">GUARDAR</button>
-        <Link to={"/home/skills"} className="btn btn-warning">VOLVER</Link>
+        <button type="submit" className="btnskillcrea btn btn-success">GUARDAR</button>
+        <Link to={"/home/skills"} className="btnskillcrea btn btn-warning">VOLVER</Link>
         </div>
       </form>
       </div>

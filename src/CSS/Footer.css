@@ -1,10 +1,6 @@
 .redes {
-   
-    /* display: flex; 
-    justify-content: space-between; 
-    align-items: center; */
-    font-size: 500%;
-    margin-right: 60%;
+    font-size: 300%;
+    margin-right: 5%;
 }
 .contenedorfooter{
     display: flex; /*Convertimos al menú en flexbox*/

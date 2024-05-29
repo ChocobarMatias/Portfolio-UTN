@@ -21,7 +21,7 @@ const Footer = memo(function Footer() {
 <Col md={1}>
 <h2 className="text-white"><Link to={"https://github.com/ChocobarMatias"}><FaGithub className="redes text-white"/></Link></h2></Col>
 <Col md={1}>
-<h2 className="text-white"><Link to={"https://wa.me/3816315170"}><BsWhatsapp className="redes text-white"/></Link></h2></Col>
+<h2 ><Link to={"https://wa.me/3816315170"}><BsWhatsapp className="redes text-white"/></Link></h2></Col>
 <Col></Col>
 </Row>
 </div>

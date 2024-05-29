@@ -40,11 +40,12 @@ const UpdateSkill = () => {
     <div>
       <br />
         <br />
-      <div className="actualizarskill">
-      <form action="" onSubmit={handleSubmit}>
-        
-        <h3>Actualizar Skill</h3>
+        <h2 className="text-white">Actualizar Skill</h2>
         <br />
+        <br />
+      <div className="actualizarskill">
+      <form className="text-white h3" action="" onSubmit={handleSubmit}>
+      <br />
         <br />
         <label htmlFor="">Nombre del Skill : </label>
         <input type="text" onChange={handleChange} name="nombreSkill" value={datos.nombreSkill}/>
@@ -55,8 +56,8 @@ const UpdateSkill = () => {
         <br />
         <br />
         <div className="botones">
-        <button type="submit" className="btn btn-success"> GUARDAR</button>
-        <Link to={"/home/skills"} className="btn btn-warning">VOLVER</Link>
+        <button type="submit" className="btnskillact btn btn-success"> GUARDAR</button>
+        <Link to={"/home/skills"} className="btnskillact btn btn-warning">VOLVER</Link>
         </div>
       </form>
       </div>

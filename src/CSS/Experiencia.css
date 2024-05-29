@@ -9,13 +9,7 @@
     padding: 32px;
     box-shadow: 0 0 20px rgb(220, 100, 30);
 }
-/* .contenedor2{
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-    margin-left: 400px;
-    margin-right: 400px;
-} */
+
 .contenedorexperiencia{
     
     /* background-color: red; */
@@ -48,7 +42,9 @@
     font-size: 200%;
     margin-right: 2%;
 }
-
+.btnexpcrea{ 
+     font-size: 200%;
+    margin-right: 2%;}
 /* actualizar experiencia */
 .actualizarexperiencia{
     display: flex;
@@ -63,4 +59,8 @@
     border-radius:30px;
     padding: 2px;
     box-shadow: 0 0 20px rgb(220, 100, 30);
+}
+.btnexpact{
+    font-size: 170%;
+    margin-right: 2%;
 }

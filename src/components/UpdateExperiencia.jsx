@@ -47,10 +47,10 @@ return (
     <div>
        <br/>
       <br/>
-      <h3>Agregar Experiencia Laboral</h3>
+      <h3 className="text-white">Agregar Experiencia Laboral</h3>
       <br/><hr/><br/>
       <div className="actualizarexperiencia">
-      <form action="" onSubmit={handleSubmit}>
+      <form className="text-white h3" action="" onSubmit={handleSubmit}>
       <label htmlFor="">Cargo : </label>
         <input type="text" onChange={handleChange} name="cargo" value={datos.cargo}/>
         <br/><br/>
@@ -68,11 +68,12 @@ return (
         <br/><br/>
         <label htmlFor="">Tarea : </label>
         <input type="text" onChange={handleChange} name="desempeño" value={datos.desempeño}/>
+        </form><br/> </div>
         <br/><br/>
-        <button type="submit" className="btn btn-success">Guardar</button>
-        <Link to={"/home/experiencias"} className="btn btn-warning">VOLVER</Link>
-      </form>
-    </div>
+        <button type="submit" className="btnexpact btn btn-success">Guardar</button>
+        <Link to={"/home/experiencias"} className="btnexpact btn btn-warning">VOLVER</Link>
+      
+   
     </div>
   )
 }

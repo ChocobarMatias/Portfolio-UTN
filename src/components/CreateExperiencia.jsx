@@ -44,32 +44,32 @@ navigate("/home/experiencias");
     <div>
       <br/>
       <br/>
-      <h3>Agregar Experiencia Laboral</h3>
+      <h3 className="text-white">Agregar Experiencia Laboral</h3>
       <br/>
 
-      <div className="crearexperiencia">
+      <div className="crearexperiencia text-white">
        <form action="" onSubmit={handleSubmit}>
-       <label htmlFor="">Cargo : </label>
+       <label htmlFor=""><h3>Cargo : </h3></label>
         <input type="text" onChange={handleChange} name="cargo"/>
         <br/><br/>
-        <label htmlFor="">Empresa : </label>
+        <label htmlFor=""><h3>Empresa : </h3></label>
         <input type="text" onChange={handleChange} name="empresa"/>
         <br/><br/>
-        <label htmlFor="">Año Inicio : </label>
+        <label htmlFor=""><h3>Año Inicio : </h3></label>
         <input type="text" onChange={handleChange} name="añoInicio"/>
         <br/><br/>
-        <label htmlFor="">Año Finalizacion : </label>
+        <label htmlFor=""><h3>Año Finalizacion : </h3></label>
         <input type="text" onChange={handleChange} name="añoFinal"/>
         <br/><br/>
-        <label htmlFor="">Estado Actual : </label>
+        <label htmlFor=""><h3>Estado Actual : </h3></label>
         <input type="text" onChange={handleChange} name="estadoActual"/>
         <br/><br/>
-        <label htmlFor="">Tarea : </label>
+        <label htmlFor=""><h3>Tarea : </h3></label>
         <input type="text" onChange={handleChange} name="desempeño"/>
         <br/><br/>
         <div className="botones">
-         <button type="submit" className="btn btn-success">Guardar</button>
-         <Link to={"/home/experiencias"} className="btn btn-warning">Volver</Link>
+         <button type="submit" className="btnexpcrea btn btn-success">Guardar</button>
+         <Link to={"/home/experiencias"} className="btnexpcrea btn btn-warning">Volver</Link>
          </div>
        </form>  
     </div>

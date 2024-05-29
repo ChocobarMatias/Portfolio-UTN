@@ -46,7 +46,7 @@ useEffect(()=>{getSkill()},[])
     <div>
       <br /><br />
       <NavOpciones/><br />
-  <h3>SKILL<Link to = {"/home/create/skill"}><IoMdAddCircleOutline/></Link></h3>
+  <h3 className="text-white">SKILL : <Link to = {"/home/create/skill"}><IoMdAddCircleOutline className="btnCrear text-white"/></Link></h3>
   <hr />
   
     <div className="containerSkill">
@@ -63,8 +63,8 @@ useEffect(()=>{getSkill()},[])
   <br /><br />
 <CircularProgressbar className="circulpro text-white" value={skill.porcentaje} text={`${skill.porcentaje}%`} />;
 <br /><br />
-  <Link to={`/home/update/skill/${skill.id}`} className="btn btn-warning"><FaEdit /></Link> 
-<Button onClick={(()=>handleClick(skill.id))} className="btn btn-danger"><MdDelete /></Button>
+  <Link to={`/home/update/skill/${skill.id}`} className="btn btn-warning"><FaEdit className="btnskill"/></Link> 
+<Button onClick={(()=>handleClick(skill.id))} className="btn btn-danger"><MdDelete className="btnskill"/></Button>
 </form></div>)}
 
 </Row></div>
