@@ -65,7 +65,7 @@ const Proyectos = () => {
       </Card.Body>
     </Card></Col> 
     <div className="botonesProyecto">
-    <Link to={`/home/update/proyectos/${proyecto.id}`} className="btn btn-warning"><FaEdit className="icon2"/></Link>
+    <Link to={`/home/update/proyectos/${proyecto.id}`} className="btn btn-warning"><FaEdit className="icon3"/></Link>
         <Button onClick={(()=>handleClick(proyecto.id))} className="icon2 btn btn-danger"><MdDelete className="icon2"/></Button>
         </div>
         </form>

@@ -5,10 +5,8 @@ import {Button} from "react-bootstrap"
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { IoMdAddCircleOutline } from "react-icons/io";
-import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import Footer from "./Footer";
-import ProgressBar from 'react-bootstrap/ProgressBar';
 import NavOpciones from "./NavOpciones";
 import skill1 from "../assets/skill1.png";
 import skill2 from "../assets/kill2.jpeg";
@@ -61,7 +59,7 @@ useEffect(()=>{getSkill()},[])
      } alt=""/></Col>
   <h3 className="text-white">{skill.nombreSkill}</h3>
   <br /><br />
-<CircularProgressbar className="circulpro text-white" value={skill.porcentaje} text={`${skill.porcentaje}%`} />;
+
 <br /><br />
   <Link to={`/home/update/skill/${skill.id}`} className="btn btn-warning"><FaEdit className="btnskill"/></Link> 
 <Button onClick={(()=>handleClick(skill.id))} className="btn btn-danger"><MdDelete className="btnskill"/></Button>

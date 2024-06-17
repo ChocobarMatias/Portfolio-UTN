@@ -12,3 +12,7 @@
 .contacto:hover{
     transform: scale(1.08);
 }
+.btnEnviar{
+    font-size: 180%;
+    margin-right: 2%;
+}

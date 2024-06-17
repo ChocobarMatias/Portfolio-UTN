@@ -47,33 +47,34 @@ if(response){
       <form action="" method="" onSubmit={handleSubmit}>
       
         <fieldset>
-        <h4 className="text-white">Si te gusto mis proyecto y queres ofrecerme un trabajo, o necesitas alguna coloboracion o ayuda te inivito que llenes el siguiente fomulario en la brevedad me estare comunicando</h4>
-          <label htmlFor="" className="text-white">Nombre : </label>
+        <h3 className="text-white">Si te gusto mis proyecto y queres ofrecerme un trabajo, o necesitas alguna
+         coloboracion o ayuda te inivito que llenes el siguiente fomulario en la brevedad me estare comunicando</h3>
+          <label htmlFor="" className="text-white"><h3>Nombre : </h3></label>
           <input type="text"  onChange={handleChange} name="nombre"/>
           <br />
           <br />
-          <label htmlFor="" className="text-white">E-Mail : </label>
+          <label htmlFor="" className="text-white"><h3>E-Mail : </h3></label>
           <input type="email" onChange={handleChange} name="email"/>
           <br />
           <br />
 
-          <label htmlFor="" className="text-white">Motivo : </label>
-          <select onChange={handleChange} name="motivo">
-            <option onChange={handleChange} name="trabajo">Trabajo </option>
+          <label htmlFor="" className="text-white"><h3>Motivo : </h3></label>
+          <h3 className="text-white"><select onChange={handleChange} name="motivo">
+            <option onChange={handleChange} name="trabajo"><h3>Trabajo</h3> </option>
 
-            <option onChange={handleChange} name="consulta">Consulta de Proyecto </option>
+            <option onChange={handleChange} name="consulta"><h3>Consulta de Proyecto </h3></option>
 
-            <option className="text-white" >Colaboracion </option>
-          </select>
+            <option ><h3  className="text-white">Colaboracion </h3></option>
+          </select></h3>
           <br />
           <br />
-          <legend>Formulario de comentarios.</legend>
+          <legend><h3 className="text-white">Formulario de comentarios.</h3></legend>
 
-          <textarea rows="5" cols="60"  name="comentario"></textarea>
+          <h3><textarea rows="5" cols="60"  name="comentario"><h3></h3></textarea></h3>
         </fieldset>
         <br />
           <br />
-        <Button type="submit">ENVIAR</Button>
+        <Button type="submit" className="btnEnviar">ENVIAR</Button>
       </form>
     </div>
   );

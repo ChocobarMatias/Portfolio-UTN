@@ -1,7 +1,7 @@
 
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import './App.css'
-import Login from "./pages/Login"
+// import Login from "./pages/Login"
 import Home from "./pages/Home"
 import Error from "./components/Error"
 import CrearFormacion from "./pages/CrearFormacion"
@@ -31,8 +31,9 @@ function App() {
     <div className="fondo">
     <BrowserRouter>
     <Routes>
-      {/* <Route path ="/" element={<Login/>}/> */}
-      <Route path ="/" element={<Home/>}/>
+      {/* <Route path ="/" element={<Login/>}/> aqui va login crearlo */}
+      {/* <Route path ="/" element={<PublicRoute/>}> */}
+      <Route path ="/" index element={<Home/>}/>
       <Route path ="/home" element={<Home/>}/>
       <Route path ="/home/formacion" element={<Formacion/>}/>
       <Route path ="/home/experiencias" element={<Experiencia/>}/>
@@ -40,6 +41,13 @@ function App() {
       <Route path ="/home/skills" element={<Skill/>}/>
       <Route path ="/home/certificados" element={<Certificacion/>}/>
       <Route path ="/home/proyectos" element={<Proyectos/>}/>
+      <Route path ="*" element={<Error/>}/>
+      {/* <Route path ="/" element={}/>
+      <Route path ="/" element={}/>  */}
+      {/* </Route> */}
+      {/* <Route path ="/" element={<PrivateRoute/>}> */}
+      {/* <Route path ="/" element={<Admin/>}/> estos dos faltan averiguar como hacerlos
+      <Route path ="/" element={<Logout/>}/> */}
       <Route path ="/home/create/formacion" element={<CrearFormacion/>}/>
       <Route path ="/home/update/formacion/:id" element={<EditarFormacion/>}/>
       <Route path ="/home/create/experiencia" element={<CrearExperiencia/>}/>
@@ -52,9 +60,13 @@ function App() {
       <Route path="/home/update/certificado/:id" element={<EditarCertificado/>}/>
       <Route path="/home/create/proyectos" element={<CrearProyecto/>}/>
       <Route path="/home/update/proyectos/:id" element={<EditarProyecto/>}/>
-      <Route path ="*" element={<Error/>}/>
       {/* <Route path ="/" element={}/>
       <Route path ="/" element={}/>  */}
+      {/* </Route> */}
+
+
+
+
     </Routes>
     
     </BrowserRouter>

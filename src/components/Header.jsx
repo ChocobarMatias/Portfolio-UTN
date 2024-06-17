@@ -18,7 +18,20 @@ const Header = memo(function Header() {
 <br /><br />
 <h3  className="text-white">Acerca de mi</h3>
 <hr /><br />
-<h2 className="text-white">Soy un apasionado del mundo de la programación, la tecnología, los ecosistemas emprendedores y los nuevos desafios.</h2>
+<h2 className="text-white">
+ Bienvenido a mi portafolio. Soy Matías, estudiante de la carrera Técnico 
+ Programador Universitario en la Universidad Tecnológica Nacional de Tucumán. 
+ Desde pequeño, siempre me ha fascinado el mundo de la tecnología y la programación.
+ Hoy en día, he decidido retomar mi pasión por este fascinante ámbito del desarrollo,
+ la tecnología y los ecosistemas emprendedores.</h2>
+ <h2 className="text-white">
+Estoy siempre dispuesto a enfrentar nuevos desafíos y a continuar capacitándome. 
+Me integro con facilidad a los equipos de trabajo, contribuyendo con entusiasmo y 
+dedicación.</h2>
+<h2 className="text-white">
+Sin más que agregar, te invito a explorar el resumen de mi trabajo y el tiempo 
+dedicado a mi capacitación que he recopilado en este portafolio. Si estás
+ interesado, continúa viendo mi recorrido y logros.</h2>
 <br /><br />
     </div></div>
     <div className="glass"></div>

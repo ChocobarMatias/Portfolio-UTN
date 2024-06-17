@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 import {Row,Col} from "react-bootstrap"
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { BsWhatsapp } from "react-icons/bs";
+
 
 
 const Footer = memo(function Footer() {
@@ -20,12 +20,11 @@ const Footer = memo(function Footer() {
 </Col>
 <Col md={1}>
 <h2 className="text-white"><Link to={"https://github.com/ChocobarMatias"}><FaGithub className="redes text-white"/></Link></h2></Col>
-<Col md={1}>
-<h2 ><Link to={"https://wa.me/3816315170"}><BsWhatsapp className="redes text-white"/></Link></h2></Col>
+
 <Col></Col>
 </Row>
 </div>
-      
+
     </div>
   )
 })
